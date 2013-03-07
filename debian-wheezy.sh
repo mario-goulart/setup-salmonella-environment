@@ -1,7 +1,7 @@
 #! /bin/sh
 
 ## This is more a guide than a serious shell script.  You can actually
-## run it as an script, but don't expect any graceful error handling.
+## run it as a script, but don't expect any graceful error handling.
 
 ## Disable Install-Suggests and Install-Recommends to save some space
 echo 'APT::Install-Suggests "0";' > /etc/apt/apt.conf.d/20no-extra-packages
