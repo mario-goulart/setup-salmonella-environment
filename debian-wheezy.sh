@@ -124,3 +124,11 @@ sh ./bvspis.sh
 rm ./bvspis.sh
 
 # use BVSPIS_PATH=/usr/local/bvspis/ salmonella bvsp-spline
+
+
+### libgit2
+git clone git://github.com/libgit2/libgit2.git
+cd libgit2
+mkdir build && cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=/usr/local
+sudo cmake --build . --target install
