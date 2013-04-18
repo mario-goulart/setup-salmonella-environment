@@ -74,7 +74,8 @@ sudo apt-get install \
     libsdl-gfx1.2-dev \
     libsdl-image1.2-dev \
     libwebkitgtk-3.0-dev \
-    openmpi-bin
+    openmpi-bin \
+    libglm-dev \
 
 
 ##
