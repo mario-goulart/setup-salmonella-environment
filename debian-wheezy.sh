@@ -76,7 +76,7 @@ sudo apt-get install \
     libwebkitgtk-3.0-dev \
     openmpi-bin \
     libglm-dev \
-    libusb-dev \
+    libusb-1.0-0-dev \
 
 
 ##
