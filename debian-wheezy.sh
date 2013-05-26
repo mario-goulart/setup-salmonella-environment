@@ -77,6 +77,8 @@ sudo apt-get install \
     openmpi-bin \
     libglm-dev \
     libusb-1.0-0-dev \
+    libffcall1-dev \
+    libdb-dev \
 
 
 ##
