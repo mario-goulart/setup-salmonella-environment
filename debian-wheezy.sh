@@ -79,6 +79,9 @@ sudo apt-get install \
     libusb-1.0-0-dev \
     libffcall1-dev \
     libdb-dev \
+    openjdk-7-jdk \
+    openjdk-7-dbg \
+    ant \
 
 
 ##
