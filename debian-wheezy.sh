@@ -82,7 +82,7 @@ sudo apt-get install \
     openjdk-7-jdk \
     openjdk-7-dbg \
     ant \
-
+    libdb5.1-dev \
 
 ##
 ## Things that are not packaged for Debian
