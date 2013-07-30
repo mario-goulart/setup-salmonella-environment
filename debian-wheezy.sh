@@ -83,6 +83,9 @@ sudo apt-get install \
     openjdk-7-dbg \
     ant \
     libdb5.1-dev \
+    libavcodec-dev \
+    libavformat-dev \
+    libswscale-dev \
 
 ##
 ## Things that are not packaged for Debian
