@@ -87,6 +87,7 @@ sudo apt-get install \
     libavformat-dev \
     libswscale-dev \
     graphviz \
+    time \
 
 ##
 ## Things that are not packaged for Debian
