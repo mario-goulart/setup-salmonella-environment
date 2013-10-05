@@ -86,6 +86,7 @@ sudo apt-get install \
     libavcodec-dev \
     libavformat-dev \
     libswscale-dev \
+    graphviz \
 
 ##
 ## Things that are not packaged for Debian
