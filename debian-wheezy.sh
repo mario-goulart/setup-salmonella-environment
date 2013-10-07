@@ -158,3 +158,12 @@ cd libgit2
 mkdir build && cd build
 cmake .. -DCMAKE_INSTALL_PREFIX=/usr/local
 sudo cmake --build . --target install
+
+
+### iup
+
+mkdir -p $tmpdir/iup
+cd $tmpdir/iup
+wget "http://sourceforge.net/projects/iup/files/3.8/Linux%2520Libraries/iup-3.8_Linux32_64_lib.tar.gz"
+tar xzvf iup-3.8_Linux32_64_lib.tar.gz
+sudo bash install_dev
