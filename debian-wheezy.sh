@@ -98,7 +98,7 @@ sudo apt-get install \
 wget http://www.pell.portland.or.us/~orc/Code/discount/discount-2.1.5a.tar.bz2
 tar xjvf discount-2.1.5a.tar.bz2
 cd discount-2.1.5a
-sed -e 's/CFLAGS=-g/CFLAGS=-g -fPIC/' Makefile
+sed -e 's/CFLAGS=-g/CFLAGS=-g -fPIC/' Makefile.in
 ./configure.sh --prefix=/usr/local
 make
 sudo make install
