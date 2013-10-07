@@ -1,11 +1,15 @@
 #! /bin/sh
 
-## This is more a guide than a serious shell script.  You can actually
-## run it as a script, but don't expect any graceful error handling.
+## Quick&dirty script to install libraries required by eggs.
+
+set -e
+
+SALMONELLA_USER=chicken
+SALMONELLA_GROUP=chicken
 
 ## Disable Install-Suggests and Install-Recommends to save some space
-echo 'APT::Install-Suggests "0";' > /etc/apt/apt.conf.d/20no-extra-packages
-echo 'APT::Install-Recommends "0";' >> /etc/apt/apt.conf.d/20no-extra-packages
+sudo sh -c "echo 'APT::Install-Suggests \"0\";' > /etc/apt/apt.conf.d/20no-extra-packages"
+sudo sh -c "echo 'APT::Install-Recommends \"0\";' >> /etc/apt/apt.conf.d/20no-extra-packages"x
 sudo apt-get update
 
 
@@ -93,8 +97,13 @@ sudo apt-get install \
 ## Things that are not packaged for Debian
 ##
 
+tmpdir=`mktemp -d`
+echo "### Using $tmpdir as temporary directory"
+
+
 ## discount
 
+cd $tmpdir
 wget http://www.pell.portland.or.us/~orc/Code/discount/discount-2.1.5a.tar.bz2
 tar xjvf discount-2.1.5a.tar.bz2
 cd discount-2.1.5a
@@ -106,6 +115,7 @@ sudo make install
 
 ### epeg
 
+cd $tmpdir
 wget http://www.call-with-current-continuation.org/tarballs/epeg-cvs-20070219.tar.gz
 tar xzvf epeg-cvs-20070219.tar.gz
 cd epeg
@@ -116,6 +126,7 @@ sudo make install
 
 ### proccpuinfo
 
+cd $tmpdir
 wget http://download.savannah.gnu.org/releases/proccpuinfo/libproccpuinfo-0.0.8.tar.bz2
 tar xjvf libproccpuinfo-0.0.8.tar.bz2
 cd libproccpuinfo-0.0.8/
@@ -127,19 +138,21 @@ sudo make install
 
 ### bvspis
 
-mkdir /usr/local/bvspis
-chown user:user /usr/local/bvspis
+sudo mkdir /usr/local/bvspis
+sudo chown ${SALMONELLA_USER}:${SALMONELLA_GROUP} /usr/local/bvspis
 cd /usr/local/bvspis
 wget http://www.netlib.org/toms/770
 awk 'NR>4' 770 > bvspis.sh
 rm 770
-sh ./bvspis.sh
+sudo sh ./bvspis.sh # is sudo required?
 rm ./bvspis.sh
 
-# use BVSPIS_PATH=/usr/local/bvspis/ salmonella bvsp-spline
+# use "BVSPIS_PATH=/usr/local/bvspis/ salmonella bvsp-spline"
 
 
 ### libgit2
+
+cd $tmpdir
 git clone git://github.com/libgit2/libgit2.git
 cd libgit2
 mkdir build && cd build
