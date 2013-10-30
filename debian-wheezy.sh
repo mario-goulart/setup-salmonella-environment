@@ -164,8 +164,8 @@ sudo cmake --build . --target install
 
 mkdir -p $tmpdir/iup
 cd $tmpdir/iup
-wget "http://sourceforge.net/projects/iup/files/3.8/Linux%2520Libraries/iup-3.8_Linux32_64_lib.tar.gz"
-tar xzvf iup-3.8_Linux32_64_lib.tar.gz
+wget "http://sourceforge.net/projects/iup/files/3.8/Linux%2520Libraries/iup-3.8_Linux32_lib.tar.gz"
+tar xzvf iup-3.8_Linux32_lib.tar.gz
 sudo bash install_dev
 
 
