@@ -167,3 +167,15 @@ cd $tmpdir/iup
 wget "http://sourceforge.net/projects/iup/files/3.8/Linux%2520Libraries/iup-3.8_Linux32_64_lib.tar.gz"
 tar xzvf iup-3.8_Linux32_64_lib.tar.gz
 sudo bash install_dev
+
+
+### canvas draw
+
+# Doesn't really work on wheezy.  Linking against canvas draw
+# libraries gives errors like "/usr/bin/ld: skipping incompatible ..."
+
+mkdir -p $tmpdir/cd
+cd $tmpdir/cd
+wget "http://ufpr.dl.sourceforge.net/project/canvasdraw/5.6.1/Linux%20Libraries/cd-5.6.1_Linux32_lib.tar.gz"
+tar xzvf cd-5.6.1_Linux32_lib.tar.gz
+sudo bash install_dev
