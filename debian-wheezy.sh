@@ -7,6 +7,9 @@ set -e
 SALMONELLA_USER=chicken
 SALMONELLA_GROUP=chicken
 
+BITS=32    # 32bit system
+# BITS=64  # 64bit system
+
 ## Disable Install-Suggests and Install-Recommends to save some space
 sudo sh -c "echo 'APT::Install-Suggests \"0\";' > /etc/apt/apt.conf.d/20no-extra-packages"
 sudo sh -c "echo 'APT::Install-Recommends \"0\";' >> /etc/apt/apt.conf.d/20no-extra-packages"x
@@ -164,8 +167,14 @@ sudo cmake --build . --target install
 
 mkdir -p $tmpdir/iup
 cd $tmpdir/iup
-wget "http://sourceforge.net/projects/iup/files/3.8/Linux%2520Libraries/iup-3.8_Linux32_lib.tar.gz"
-tar xzvf iup-3.8_Linux32_lib.tar.gz
+tarball=
+if [ "$BITS" = "32" ]; then
+    tarball=iup-3.8_Linux32_lib.tar.gz
+else
+    tarball=iup-3.8_Linux32_64_lib.tar.gz
+fi
+wget "http://sourceforge.net/projects/iup/files/3.8/Linux%2520Libraries/$tarball"
+tar xzvf $tarball
 sudo bash install_dev
 
 
@@ -176,6 +185,11 @@ sudo bash install_dev
 
 mkdir -p $tmpdir/cd
 cd $tmpdir/cd
-wget "http://ufpr.dl.sourceforge.net/project/canvasdraw/5.6.1/Linux%20Libraries/cd-5.6.1_Linux32_lib.tar.gz"
-tar xzvf cd-5.6.1_Linux32_lib.tar.gz
+if [ "$BITS" = "32" ]; then
+    tarball=cd-5.6.1_Linux32_lib.tar.gz
+else
+    tarball=cd-5.6.1_Linux32_64_lib.tar.gz
+fi
+wget "http://ufpr.dl.sourceforge.net/project/canvasdraw/5.6.1/Linux%20Libraries/$tarball"
+tar xzvf $tarball
 sudo bash install_dev
