@@ -193,3 +193,15 @@ fi
 wget "http://ufpr.dl.sourceforge.net/project/canvasdraw/5.6.1/Linux%20Libraries/$tarball"
 tar xzvf $tarball
 sudo bash install_dev
+
+
+### cryptlib
+
+mkdir -p $tmpdir/cryptlib
+cd $tmpdir/cryptlib
+wget ftp://ftp.franken.de/pub/crypt/cryptlib/cl342.zip
+unzip -a cl342.zip
+make
+make shared
+sudo cp libcl.a libcl.so.3.4.2 /usr/local/lib/
+sudo cp *.h /usr/local/include/
