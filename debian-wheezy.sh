@@ -95,6 +95,7 @@ sudo apt-get install \
     libswscale-dev \
     graphviz \
     time \
+    libmagic-dev \
 
 ##
 ## Things that are not packaged for Debian
