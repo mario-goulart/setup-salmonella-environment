@@ -96,6 +96,7 @@ sudo apt-get install \
     graphviz \
     time \
     libmagic-dev \
+    libfuse-dev \
 
 ##
 ## Things that are not packaged for Debian
