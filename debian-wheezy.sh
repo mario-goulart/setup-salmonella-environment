@@ -146,11 +146,11 @@ sudo make install
 sudo mkdir /usr/local/bvspis
 sudo chown ${SALMONELLA_USER}:${SALMONELLA_GROUP} /usr/local/bvspis
 cd /usr/local/bvspis
-wget http://www.netlib.org/toms/770
-awk 'NR>4' 770 > bvspis.sh
-rm 770
-sudo sh ./bvspis.sh # is sudo required?
-rm ./bvspis.sh
+sudo wget http://www.netlib.org/toms/770
+sudo sh -c "awk 'NR>4' 770 > bvspis.sh"
+sudo rm 770
+sudo sh ./bvspis.sh
+sudo rm ./bvspis.sh
 
 # use "BVSPIS_PATH=/usr/local/bvspis/ salmonella bvsp-spline"
 
