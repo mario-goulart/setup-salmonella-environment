@@ -19,6 +19,7 @@ sudo apt-get update
 ## Packages
 sudo apt-get install \
     build-essential \
+    clang \
     git-core \
     cmake \
     flex \
