@@ -12,5 +12,5 @@ su root -c "pkg install \
 	allegro-devel openal-soft openmpi libgit2 tokyocabinet zmq \
 	python27 postgresql90-client postgresql90-server \
 	augeas ossp-uuid webkit-gtk3 hyperestraier memcached \
-	redis discount apache-ant qmake xosd \
+	redis discount apache-ant qmake xosd db6 \
 	freetds-devel mysql55-client mysql55-server"
