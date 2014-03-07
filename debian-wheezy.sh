@@ -98,6 +98,7 @@ sudo apt-get install \
     time \
     libmagic-dev \
     libfuse-dev \
+    units \
 
 ##
 ## Things that are not packaged for Debian
