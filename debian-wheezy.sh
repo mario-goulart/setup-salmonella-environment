@@ -99,6 +99,7 @@ sudo apt-get install \
     libmagic-dev \
     libfuse-dev \
     units \
+    postgresql-server-dev-all \
 
 ##
 ## Things that are not packaged for Debian
