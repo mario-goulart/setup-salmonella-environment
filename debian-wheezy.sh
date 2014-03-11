@@ -100,6 +100,7 @@ sudo apt-get install \
     libfuse-dev \
     units \
     postgresql-server-dev-all \
+    libmarkdown2-dev \
 
 ##
 ## Things that are not packaged for Debian
@@ -107,17 +108,6 @@ sudo apt-get install \
 
 tmpdir=`mktemp -d`
 echo "### Using $tmpdir as temporary directory"
-
-
-## discount
-
-cd $tmpdir
-wget http://www.pell.portland.or.us/~orc/Code/discount/discount-2.1.5a.tar.bz2
-tar xjvf discount-2.1.5a.tar.bz2
-cd discount-2.1.5a
-./configure.sh --shared --prefix=/usr/local
-make
-sudo make install
 
 
 ### epeg
