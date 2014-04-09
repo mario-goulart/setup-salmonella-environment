@@ -101,6 +101,8 @@ sudo apt-get install \
     units \
     postgresql-server-dev-all \
     libmarkdown2-dev \
+    xorg-dev \
+    libglu1-mesa-dev \
 
 ##
 ## Things that are not packaged for Debian
@@ -200,3 +202,28 @@ make
 make shared
 sudo cp libcl.a libcl.so.3.4.2 /usr/local/lib/
 sudo cp *.h /usr/local/include/
+
+
+### glfw3
+
+mkdir -p $tmpdir/glfw3
+cd $tmpdir/glfw3
+wget http://ufpr.dl.sourceforge.net/project/glfw/glfw/3.0.4/glfw-3.0.4.zip
+unzip glfw-3.0.4.zip
+cd glfw-3.0.4
+cmake -D BUILD_SHARED_LIBS=1 .
+make
+sudo make install
+
+# Will install:
+# -- Installing: /usr/local/include/GLFW
+# -- Installing: /usr/local/include/GLFW/glfw3native.h
+# -- Installing: /usr/local/include/GLFW/glfw3.h
+# -- Installing: /usr/local/lib/cmake/glfw/glfwConfig.cmake
+# -- Installing: /usr/local/lib/cmake/glfw/glfwConfigVersion.cmake
+# -- Installing: /usr/local/lib/cmake/glfw/glfwTargets.cmake
+# -- Installing: /usr/local/lib/cmake/glfw/glfwTargets-noconfig.cmake
+# -- Installing: /usr/local/lib/pkgconfig/glfw3.pc
+# -- Installing: /usr/local/lib/libglfw.so.3.0
+# -- Installing: /usr/local/lib/libglfw.so.3
+# -- Installing: /usr/local/lib/libglfw.so
