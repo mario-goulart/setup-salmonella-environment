@@ -103,6 +103,7 @@ sudo apt-get install \
     libmarkdown2-dev \
     xorg-dev \
     libglu1-mesa-dev \
+    libglew-dev \
 
 ##
 ## Things that are not packaged for Debian
