@@ -104,6 +104,7 @@ sudo apt-get install \
     xorg-dev \
     libglu1-mesa-dev \
     libglew-dev \
+    libleveldb-dev \
 
 ##
 ## Things that are not packaged for Debian
