@@ -105,6 +105,7 @@ sudo apt-get install \
     libglu1-mesa-dev \
     libglew-dev \
     libleveldb-dev \
+    libyaml-dev \
 
 ##
 ## Things that are not packaged for Debian
