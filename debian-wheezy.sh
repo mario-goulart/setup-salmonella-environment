@@ -106,6 +106,7 @@ sudo apt-get install \
     libglew-dev \
     libleveldb-dev \
     libyaml-dev \
+    libudev-dev \
 
 ##
 ## Things that are not packaged for Debian
