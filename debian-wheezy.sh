@@ -231,3 +231,15 @@ sudo make install
 # -- Installing: /usr/local/lib/libglfw.so.3.0
 # -- Installing: /usr/local/lib/libglfw.so.3
 # -- Installing: /usr/local/lib/libglfw.so
+
+
+### nanomsg
+
+mkdir -p $tmpdir/nanomsg
+cd $tmpdir/nanomsg
+wget http://download.nanomsg.org/nanomsg-0.4-beta.tar.gz
+tar xzvf nanomsg-0.4-beta.tar.gz
+cd nanomsg-0.4-beta
+./configure --prefix=/usr/local
+make
+sudo make install
