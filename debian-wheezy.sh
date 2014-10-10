@@ -243,3 +243,13 @@ cd nanomsg-0.4-beta
 ./configure --prefix=/usr/local
 make
 sudo make install
+
+
+### wiring pi (for raspberry-pi-gpio)
+
+mkdir -p $tmpdir/wiringPi
+cd $tmpdir/wiringPi
+git clone git://git.drogon.net/wiringPi
+cd wiringPi
+git checkout df45388f6431f7baba31ac1e8e242d89828637a0
+./build
