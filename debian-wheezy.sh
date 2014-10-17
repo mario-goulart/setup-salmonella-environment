@@ -12,7 +12,7 @@ BITS=32    # 32bit system
 
 ## Disable Install-Suggests and Install-Recommends to save some space
 sudo sh -c "echo 'APT::Install-Suggests \"0\";' > /etc/apt/apt.conf.d/20no-extra-packages"
-sudo sh -c "echo 'APT::Install-Recommends \"0\";' >> /etc/apt/apt.conf.d/20no-extra-packages"x
+sudo sh -c "echo 'APT::Install-Recommends \"0\";' >> /etc/apt/apt.conf.d/20no-extra-packages"
 sudo apt-get update
 
 
