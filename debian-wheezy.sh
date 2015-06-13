@@ -255,5 +255,16 @@ git checkout df45388f6431f7baba31ac1e8e242d89828637a0
 ./build
 
 
+### libsass
+
+mkdir -p $tmpdir/libsass
+cd $tmpdir/libsass
+wget https://github.com/sass/libsass/archive/3.2.5.tar.gz -O libsass-3.2.5.tar.gz
+tar xzvf libsass-3.2.5.tar.gz
+cd libsass-3.2.5/
+make
+sudo make install install-shared
+
+
 ### Finishing
 sudo ldconfig
