@@ -158,7 +158,7 @@ sudo rm ./bvspis.sh
 cd $tmpdir
 git clone git://github.com/libgit2/libgit2.git
 cd libgit2
-git checkout v0.21.1
+git checkout v0.22.0
 mkdir build && cd build
 cmake .. -DCMAKE_INSTALL_PREFIX=/usr/local
 sudo cmake --build . --target install
