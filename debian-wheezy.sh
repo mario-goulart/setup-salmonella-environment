@@ -266,5 +266,15 @@ make
 sudo make install install-shared
 
 
+### lmdb
+
+mkdir -p $tmpdir/lmdb
+cd $tmpdir/lmdb
+git clone https://github.com/LMDB/lmdb.git
+cd lmdb/libraries/liblmdb
+make
+sudo make install
+
+
 ### Finishing
 sudo ldconfig
