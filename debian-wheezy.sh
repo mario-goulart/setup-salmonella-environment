@@ -276,5 +276,11 @@ make
 sudo make install
 
 
+### ola
+echo 'deb   http://apt.openlighting.org/debian  wheezy main' >> /etc/apt/sources.list
+sudo apt-get update
+sudo apt-get install -y ola-dev
+
+
 ### Finishing
 sudo ldconfig
