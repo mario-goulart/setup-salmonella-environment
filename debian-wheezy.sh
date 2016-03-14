@@ -107,6 +107,7 @@ sudo apt-get install \
     libleveldb-dev \
     libyaml-dev \
     libudev-dev \
+    libprotobuf-dev \
 
 ##
 ## Things that are not packaged for Debian

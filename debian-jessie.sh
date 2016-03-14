@@ -109,6 +109,7 @@ sudo apt-get install \
     libudev-dev \
     liblmdb-dev \
     libola-dev \
+    libprotobuf-dev \
 
 ##
 ## Things that are not packaged for Debian
