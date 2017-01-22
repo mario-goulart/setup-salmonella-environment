@@ -283,5 +283,15 @@ sudo apt-get update
 sudo apt-get install -y ola-dev
 
 
+### libnova
+cd $tmpdir
+git clone git://git.code.sf.net/p/libnova/libnova
+cd libnova
+./autogen.sh
+./configure
+make
+sudo make install
+
+
 ### Finishing
 sudo ldconfig
