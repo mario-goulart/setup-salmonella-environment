@@ -40,6 +40,7 @@ sudo apt-get install \
     libgts-dev \
     libglpk-dev \
     libaugeas-dev \
+    libsodium-dev \
     libtokyocabinet-dev \
     libossp-uuid-dev \
     libatlas-base-dev \
