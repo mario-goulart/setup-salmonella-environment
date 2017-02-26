@@ -40,7 +40,6 @@ sudo apt-get install \
     libgts-dev \
     libglpk-dev \
     libaugeas-dev \
-    libsodium-dev \
     libtokyocabinet-dev \
     libossp-uuid-dev \
     libatlas-base-dev \
@@ -288,6 +287,17 @@ sudo apt-get install -y ola-dev
 cd $tmpdir
 git clone git://git.code.sf.net/p/libnova/libnova
 cd libnova
+./autogen.sh
+./configure
+make
+sudo make install
+
+
+### libsodium
+cd $tmpdir
+git clone https://github.com/jedisct1/libsodium.git
+cd libsodium
+git checkout 1.0.11
 ./autogen.sh
 ./configure
 make
