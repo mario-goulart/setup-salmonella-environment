@@ -203,11 +203,11 @@ sudo bash install_dev
 
 mkdir -p $tmpdir/cryptlib
 cd $tmpdir/cryptlib
-wget ftp://ftp.franken.de/pub/crypt/cryptlib/cl342.zip
-unzip -a cl342.zip
+wget ftp://ftp.franken.de/pub/crypt/cryptlib/cl3431.zip
+unzip -a cl3431.zip
 make
 make shared
-sudo cp libcl.a libcl.so.3.4.2 /usr/local/lib/
+sudo cp libcl.a libcl.so.3.* /usr/local/lib/
 sudo cp *.h /usr/local/include/
 
 
