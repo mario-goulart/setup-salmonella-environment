@@ -112,6 +112,7 @@ sudo apt-get install \
     libprotobuf-dev \
     libnanomsg-dev \
     libsass-dev \
+    libsndfile1-dev \
 
 ##
 ## Things that are not packaged for Debian
