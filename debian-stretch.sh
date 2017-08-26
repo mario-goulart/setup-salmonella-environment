@@ -160,17 +160,15 @@ sudo rm ./bvspis.sh
 # use "BVSPIS_PATH=/usr/local/bvspis/ salmonella bvsp-spline"
 
 
-# Libgit 0.23.4 doesn't compile with gcc 6.3.0
+### libgit2
 
-# ### libgit2
-
-# cd $tmpdir
-# git clone git://github.com/libgit2/libgit2.git
-# cd libgit2
-# git checkout v0.23.4
-# mkdir build && cd build
-# cmake .. -DCMAKE_INSTALL_PREFIX=/usr/local
-# sudo cmake --build . --target install
+cd $tmpdir
+git clone git://github.com/libgit2/libgit2.git
+cd libgit2
+git checkout v0.25.0
+mkdir build && cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=/usr/local
+sudo cmake --build . --target install
 
 
 ### iup
