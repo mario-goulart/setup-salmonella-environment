@@ -113,6 +113,7 @@ sudo apt-get install \
     libnanomsg-dev \
     libsass-dev \
     libsndfile1-dev \
+    liblzma-dev \
 
 ##
 ## Things that are not packaged for Debian
