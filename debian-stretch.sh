@@ -115,6 +115,7 @@ sudo apt-get install \
     libsndfile1-dev \
     liblzma-dev \
     libsdl2-dev \
+    libleptonica-dev \
 
 ##
 ## Things that are not packaged for Debian
