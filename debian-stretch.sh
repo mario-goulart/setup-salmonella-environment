@@ -114,6 +114,7 @@ sudo apt-get install \
     libsass-dev \
     libsndfile1-dev \
     liblzma-dev \
+    libsdl2-dev \
 
 ##
 ## Things that are not packaged for Debian
