@@ -116,6 +116,7 @@ sudo apt-get install \
     liblzma-dev \
     libsdl2-dev \
     libleptonica-dev \
+    libsvm-dev \
 
 ##
 ## Things that are not packaged for Debian
