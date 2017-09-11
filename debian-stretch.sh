@@ -255,5 +255,19 @@ make
 sudo make install
 
 
+### libui
+
+mkdir -p $tmpdir/libui
+cd $tmpdir/libui
+git clone https://github.com/andlabs/libui.git
+cd libui
+mkdir build
+cd build
+cmake ..
+make
+sudo cp -a out/* /usr/local/lib/
+sudo cp ../ui.h /usr/local/include/
+
+
 ### Finishing
 sudo ldconfig
