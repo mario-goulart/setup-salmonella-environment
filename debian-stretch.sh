@@ -269,5 +269,19 @@ sudo cp -a out/* /usr/local/lib/
 sudo cp ../ui.h /usr/local/include/
 
 
+### KiWi
+
+mkdir -p $tmpdir/KiWi
+cd $tmpdir/KiWi
+git clone https://github.com/mobius3/KiWi.git
+cd KiWi
+git checkout ab0aadc321b5f15f269432719c8ee8b5dfa31a2c
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+
+
 ### Finishing
 sudo ldconfig
