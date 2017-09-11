@@ -228,5 +228,17 @@ git checkout df45388f6431f7baba31ac1e8e242d89828637a0
 ./build
 
 
+### agar
+
+mkdir -p $tmpdir/agar
+cd $tmpdir/agar
+wget http://stable.hypertriton.com/agar/agar-1.5.0.tar.gz
+tar xzvf agar-1.5.0.tar.gz
+cd agar-1.5.0/
+./configure --without-freetype
+make depend all
+sudo make install
+
+
 ### Finishing
 sudo ldconfig
