@@ -118,6 +118,7 @@ sudo apt-get install \
     libleptonica-dev \
     libsvm-dev \
     libsdl2-ttf-dev \
+    libsdl2-image-dev \
 
 ##
 ## Things that are not packaged for Debian
