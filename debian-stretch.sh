@@ -240,5 +240,18 @@ make depend all
 sudo make install
 
 
+### cmark
+
+mkdir -p $tmpdir/cmark
+cd $tmpdir/cmark
+git clone https://github.com/commonmark/cmark.git
+cd cmark
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+
+
 ### Finishing
 sudo ldconfig
