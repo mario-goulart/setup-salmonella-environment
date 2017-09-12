@@ -119,6 +119,7 @@ sudo apt-get install \
     libsvm-dev \
     libsdl2-ttf-dev \
     libsdl2-image-dev \
+    hyperestraier \
 
 ##
 ## Things that are not packaged for Debian
