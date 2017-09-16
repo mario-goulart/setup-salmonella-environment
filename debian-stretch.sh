@@ -283,6 +283,17 @@ cmake ..
 make
 sudo make install
 
+### lzmalib
+
+mkdir -p $tmpdir/lzmalib
+cd $tmpdir/lzmalib
+wget http://tokyocabinet.sourceforge.net/misc/lzmalib-0.0.1.tar.gz
+tar xzvf lzmalib-0.0.1.tar.gz
+cd lzmalib-0.0.1/
+./configure
+make
+sudo make install
+
 
 ### Finishing
 sudo ldconfig
