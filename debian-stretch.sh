@@ -120,6 +120,7 @@ sudo apt-get install \
     libsdl2-ttf-dev \
     libsdl2-image-dev \
     hyperestraier \
+    liblink-grammar-dev \
 
 ##
 ## Things that are not packaged for Debian
