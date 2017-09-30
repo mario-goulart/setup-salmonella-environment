@@ -67,7 +67,6 @@ sudo apt-get install \
     libstemmer-dev \
     zlib1g-dev \
     libsvn-dev \
-    liballegro4.2-dev \
     libfltk1.3-dev \
     libzmq3-dev \
     libmpfi-dev \
@@ -121,6 +120,14 @@ sudo apt-get install \
     libsdl2-image-dev \
     hyperestraier \
     liblink-grammar-dev \
+    liballegro5-dev \
+    liballegro-image5-dev \
+    liballegro-acodec5-dev \
+    liballegro-dialog5-dev \
+    liballegro-audio5-dev \
+    liballegro-physfs5-dev \
+    liballegro-image5-dev \
+    liballegro-ttf5-dev\
 
 ##
 ## Things that are not packaged for Debian
