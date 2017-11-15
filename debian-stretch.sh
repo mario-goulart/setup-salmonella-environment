@@ -128,6 +128,7 @@ sudo apt-get install \
     liballegro-physfs5-dev \
     liballegro-image5-dev \
     liballegro-ttf5-dev\
+    libstfl-dev \
 
 ##
 ## Things that are not packaged for Debian
