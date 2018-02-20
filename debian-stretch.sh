@@ -129,6 +129,7 @@ sudo apt-get install \
     liballegro-image5-dev \
     liballegro-ttf5-dev\
     libstfl-dev \
+    libblosc-dev \
 
 ##
 ## Things that are not packaged for Debian
