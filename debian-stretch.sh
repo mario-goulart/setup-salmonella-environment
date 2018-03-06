@@ -130,6 +130,7 @@ sudo apt-get install \
     liballegro-ttf5-dev\
     libstfl-dev \
     libblosc-dev \
+    libgumbo-dev \
 
 ##
 ## Things that are not packaged for Debian
