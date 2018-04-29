@@ -131,6 +131,7 @@ sudo apt-get install \
     libstfl-dev \
     libblosc-dev \
     libgumbo-dev \
+    haveged \
 
 ##
 ## Things that are not packaged for Debian
