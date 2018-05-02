@@ -132,6 +132,7 @@ sudo apt-get install \
     libblosc-dev \
     libgumbo-dev \
     haveged \
+    mlton \
 
 ##
 ## Things that are not packaged for Debian
