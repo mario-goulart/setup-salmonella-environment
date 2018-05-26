@@ -1,1 +1,4 @@
-Scripts to set up an environment to run Salmonella on all CHICKEN eggs
+This repository is no longer maintained.  Its content has been merged
+into the salmonella-environment-setup repository at
+https://code.call-cc.org/cgi-bin/gitweb.cgi?p=salmonella-environment-setup.git;a=summary
+(system-setup directory)
